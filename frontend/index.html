@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Selaras · Biaya bersama & laba dapur</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="app">
+  <aside class="side">
+    <div class="logo"><span class="mark" aria-hidden="true"></span><div><b>Selaras</b><small>Biaya bersama & laba dapur</small></div></div>
+    <nav id="nav" aria-label="Menu utama">
+      <button data-view="ringkasan">Ringkasan</button>
+      <button data-view="kinerja">Kinerja brand</button>
+      <button data-view="biaya">Biaya bersama</button>
+      <button data-view="alokasi">Hasil alokasi</button>
+      <button data-view="brand">Daftar brand</button>
+    </nav>
+    <p class="side-foot">Data tersimpan otomatis di Supabase.</p>
+  </aside>
+  <main>
+    <header class="top">
+      <h1 id="title">Ringkasan</h1>
+      <div class="period" id="periodBox">
+        <button class="icon" data-act="prev" aria-label="Bulan sebelumnya">‹</button>
+        <input type="month" id="period" aria-label="Pilih bulan">
+        <button class="icon" data-act="next" aria-label="Bulan berikutnya">›</button>
+      </div>
+    </header>
+    <section id="view" aria-live="polite"></section>
+  </main>
+</div>
+<dialog id="dlg"></dialog>
+<div id="toast" role="status"></div>
+
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.45.4/dist/umd/supabase.js"></script>
+<script src="js/config.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
