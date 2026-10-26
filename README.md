@@ -1,5 +1,5 @@
 # Selaras
-Akses link: https://mayasyaaptr.github.io/Selarass/
+Akses link: https://mayasyaaptr.github.io/Selaras/
 
 Aplikasi web untuk membagi biaya bersama dan melihat laba tiap brand di cloud kitchen multibrand.
 Frontend: HTML, CSS, JS. Backend: Supabase (PostgreSQL). Tanpa login.
